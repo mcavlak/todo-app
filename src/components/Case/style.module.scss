@@ -1,0 +1,39 @@
+@import "../../theme.scss";
+
+.wrapper {
+    width: 100%;
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: rgba($primary, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        i {
+            color: $primary;
+        }
+        h6 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+    .list {
+        padding: 0.5rem;
+        display: grid;
+        gap: 0.5rem;
+        list-style-type: none;
+        hr {
+            border: 1px solid $bg;
+        }
+        .alert {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: rgba(#2980b9, 0.1);
+            color: #2980b9;
+            border-radius: 0.5rem;
+        }
+    }
+}
