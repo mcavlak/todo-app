@@ -1,0 +1,44 @@
+@import "../../theme.scss";
+
+.wrapper {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    max-width: 80%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 16px 24px rgba(black, 0.1);
+    min-height: 20rem;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6 {
+            color: $text;
+            font-size: 1rem;
+            font-weight: 400;
+            span {
+                font-weight: 600;
+            }
+        }
+        button {
+            background-color: rgba($primary, 0.12);
+            color: $primary;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba($primary, 0.5);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: 400ms;
+            &:hover {
+                background-color: $primary;
+                color: white;
+            }
+        }
+    }
+    .todos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
+    }
+}
