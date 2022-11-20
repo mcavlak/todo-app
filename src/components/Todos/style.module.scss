@@ -4,7 +4,9 @@
     display: grid;
     gap: 1rem;
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
     padding: 2rem;
     background-color: white;
     border-radius: 1rem;
@@ -40,5 +42,13 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        .todos {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
     }
 }

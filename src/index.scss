@@ -13,11 +13,15 @@ body {
   main {
     width: 100%;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     footer {
-      position: absolute;
-      bottom: 1rem;
+      a {
+        color: $primary;
+      }
     }
   }
 }
