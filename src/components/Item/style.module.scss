@@ -1,0 +1,54 @@
+@import "../../theme.scss";
+
+.wrapper {
+    color: $text;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba($text, 0.2);
+    width: 100%;
+    overflow: hidden;
+    font-size: 0.875rem;
+    background-color: white;
+    p {
+        font-size: inherit;
+    }
+    .input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0.4rem;
+        padding: 0.5rem 1rem;
+        font-size: inherit;
+        &:focus {
+            outline: none;
+        }
+    }
+    .action {
+        margin: 0 0.5rem;
+        display: flex;
+        gap: 0.5rem;
+        button {
+            border: none;
+            border-radius: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+            display: grid;
+            place-items: center;
+            padding: 0;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .checkbox {
+            border: 1px solid rgba($primary, 0.2);
+            color: $primary;
+        }
+        .cancel {
+            color: $text;
+        }
+        .ok {
+            background-color: $primary;
+            color: white;
+        }
+    }
+}
