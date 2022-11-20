@@ -1,0 +1,52 @@
+@import "../../theme.scss";
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 16px 24px rgba(black, 0.1);
+    width: 20rem;
+    h6 {
+        font-size: 1.5rem;
+        color: $primary;
+    }
+    .label {
+        display: grid;
+        gap: 0.4rem;
+    }
+    hr {
+        border: 1px solid $bg;
+    }
+    button {
+        width: 100%;
+        border: 1px solid rgba($primary, 0.5);
+        background-color: rgba($primary, 0.1);
+        color: $primary;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: 400ms;
+        &:hover {
+            background-color: $primary;
+            color: white;
+        }
+        &:disabled {
+            background-color: $bg;
+            color: $text;
+            border-color: $text;
+        }
+        i {
+            font-size: inherit;
+        }
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: inherit;
+        }
+    }
+}
