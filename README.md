@@ -1,8 +1,9 @@
 # todo-app
+It is a to-do application that I do to improve myself.
 
-## Install & Start
+### Install & Start
 - npx yarn install
 - npx yarn start
 
-## Live
+### Live
 - https://todo-app-mcavlak.vercel.app/
